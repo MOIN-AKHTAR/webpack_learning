@@ -8,11 +8,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production --entry ./src/js/app.js --output-filename ./bundle.js"
+    "build": "webpack --mode=production --entry ./src/js/app.js --output-filename ./bundle.js",
+    "build:viaConfig": "webpack"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   }
